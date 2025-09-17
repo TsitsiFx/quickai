@@ -24,7 +24,7 @@ const navItems = [
   { to: "/ai/review-resume", label: "Review Resume", Icon: FileText },
   { to: "/ai/community", label: "Community", Icon: Users },
 ];
-const Sidebar = (sidebar, setSidebar) => {
+const Sidebar = ({sidebar, setSidebar}) => {
   const { user } = useUser();
   const { signOut, openUserProfile } = useClerk();
   return (
